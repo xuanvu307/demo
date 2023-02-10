@@ -1,6 +1,7 @@
 body {
     width: 100%;
     margin: 0;
+    font-family: sans-serif;
 }
 a {
     text-decoration: none;
@@ -21,7 +22,7 @@ ul {
     justify-content: space-between;
     padding: 0 20px;
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
     z-index: 100;
 }
 .title a {
@@ -35,6 +36,8 @@ ul {
     text-transform: uppercase;
     padding: 5px 10px;
     margin-top: -5px;
+    word-spacing: -2px;
+    font-size: 12px;
 }
 .contact{
     background-color: #0079b6;
@@ -49,20 +52,27 @@ ul {
 }
 .profile{
     margin-top: -400px;
-    position: relative;
 }
 
+.contener{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: -20em; */
+}
 .filter{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    /* margin-top: -300px; */
-    z-index: 100;
+    flex-direction: column; 
     background-color: white;
-    font-size: 25px;
-    position: absolute;
-    margin: auto;
-    z-index: 100;
+    font-size: 20px;
+    position: relative;
+    margin-top: -300px;
+    padding-bottom: 30px;
+    /* top: 500px; */
+    /* left: 0; */
+    /* bottom: 300px; */
+    /* right: 0; */
+    /* z-index: 10000; */
 }
 
 .filter h3{
@@ -71,6 +81,84 @@ ul {
 }
 
 .filter select{
-    font-size: 20px;
-    padding: 0 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn_search{
+    border: none;
+    padding: 10px 15px;
+    background-color: #c72528;
+    color: white;
+}
+
+
+.backgroud{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: -100px;
+}
+.top_footer{ 
+    color: white;
+    background-color: #000111;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    position: relative;
+    z-index: 100;
+}
+.box_size{
+    width: 60%;
+}
+.phone_mail{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.phone{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left:10px;
+}
+.mail{
+    display: flex;
+    align-items: center;
+}
+.infomation{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    color: #c0c0c0;
+}
+.infomation_item{
+    flex-basis: 23%;
+    flex-direction: column;
+}
+.infomation a{
+    display: flex;
+    color: white;
+    align-content: space-evenly;
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+.infomation h2{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.infomation a:last-child{
+    border: none;
+}
+.bottom_footer{
+    font-size: 12px;
+    display: flex;
+    background-color: #192642;
+    color: #c0c0c0;
+    justify-content: center;
+    position: relative;
+    z-index: 50;
 }
